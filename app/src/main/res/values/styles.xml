@@ -1,0 +1,60 @@
+<resources>
+
+    <style name="AppMaterialTheme" parent="SuperMaterialTheme" >
+        <!--the one which was assign in the Manifest-->                               // we copy this code in the v21 xml file
+    </style>
+
+    <style name="SuperMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">  <!--Theme.Material is a material design theme-->
+        <!-- Customize your theme here. -->
+
+        <!--/this is parent  theme but is not a material design them ... because Theme.AppCompat is compatible with all android devices /-->
+        <!-- pre material theme for all pre lollipop and lollipop version for all devices -->
+        <item name="colorPrimary">@color/colorPrimary</item>          <!--//intensity 500-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>  <!--//intensity 700-->
+        <item name="colorAccent">@color/colorAccent</item>            <!--//intensity 200  and also should be a contrasting one -->
+
+        <item name="colorControlHighlight">#E3F2FD</item>
+        <item name="colorButtonNormal">#455A64</item>
+        <item name="colorControlActivated">#FF1744</item>
+        <item name="colorError">#D50000</item>
+        <item name="android:textColor">#FF9800</item><!--notice android:textColor-->
+
+        <item name="windowActionModeOverlay">true</item> <!--by setting this to true we will allow the contextual menu to overlay the toolbar -->
+
+        <!-- <item name="android:actionModeStyle"></item>-->   <!--to customize the action mode style we remove the android see next line-->
+        <item name="actionModeStyle">@style/MyActionMode</item> <!--remove android android and define  this style see below -->
+
+    </style>
+    
+    <style name="MyActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background" >@color/contextual_background</item>  <!--we define this color in color . xml -->
+        <item name="titleTextStyle">@style/MyTextStyle</item>  <!--define a textStyle for our contextual menu-->
+    </style>
+
+    <style name="MyTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+
+        <item name="android:textColor">@color/contextualText</item>
+
+
+    </style>
+
+     <!-- in color xml file we can click on the color icon to change the color-->
+
+
+    <!--lets create a style for our toolbar... include this in the toolbar xml file as app:theme="style/MyToolbarTheme also in v21xml file  -->
+    <style name="MyToolbarTheme" parent="Theme.AppCompat.Light">
+
+    <item name="android:textColorPrimary">@android:color/white</item> <!--test color of toolbar Title -->
+    <item name="android:textColorSecondary">@android:color/holo_red_dark</item> <!--color of overflow menu and navigation icon , subtitle -->
+    </style>
+
+
+    <!--include this the toolbar xml file as app:popupTheme  also in v21xml file -->
+    <style name="MyPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+
+        <item name="android:background">@color/overFlowMenuBg</item> <!--this is how we change the backgroud color of the popup overflow menu (the list in the 3 dots)-->
+        <item name="android:textColorPrimary">@color/red_800</item>
+
+    </style>
+
+</resources>

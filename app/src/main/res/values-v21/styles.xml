@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!--the app theme is defined in the Manifest -->
+
+
+    <style name="AppMaterialTheme" parent="SuperMaterialTheme" >
+       <!--we can customize the Them for the lollipop versions here -->
+    </style>
+
+
+
+</resources>

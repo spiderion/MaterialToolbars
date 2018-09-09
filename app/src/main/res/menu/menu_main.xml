@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/download"
+        android:icon="@drawable/downloadbtn"
+        android:orderInCategory="100"
+        android:title="download"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/save"
+        android:icon="@mipmap/ic_launcher_round_round"
+        android:orderInCategory="100"
+        android:title="Save"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mail"
+        android:orderInCategory="100"
+        android:title="mail"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/camera"
+        android:orderInCategory="100"
+        android:title="camera"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:title="settings"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:title="help"
+        app:showAsAction="never"/>
+
+
+</menu>

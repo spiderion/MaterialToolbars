@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00acc1</color>
+    <color name="colorPrimaryDark">#009688</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTextPrimary">#ECEFF1</color>
+    <color name="overFlowMenuBg">#BDBDBD</color>
+    <color name="red_800">#C62828</color>
+
+    <color name="contextual_background">#76FF03</color>  <!--for the contextual color background-->
+    <color name="contextualText">#BDBDBD</color>
+    //  we can click on the color icon to change the color
+
+</resources>
